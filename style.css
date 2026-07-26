@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f7f5ef;
+    color: #222;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 0 auto;
+    padding: 32px 0 60px;
+}
+
+header {
+    margin-bottom: 32px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    margin-top: 36px;
+}
+
+a {
+    color: #174f7c;
+}
+
+.lesson-number {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.rule-card,
+.example-card,
+.word-card,
+.lesson-link {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+.lesson-list {
+    display: grid;
+    gap: 14px;
+}
+
+.lesson-link {
+    display: grid;
+    text-decoration: none;
+    color: inherit;
+}
+
+.lesson-link span,
+.lesson-link small {
+    color: #666;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #ece8dc;
+}
+
+.word-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.malayalam-word {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.checklist {
+    display: grid;
+    gap: 12px;
+}
+
+.checklist label {
+    background: white;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .word-grid {
+        grid-template-columns: 1fr;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
