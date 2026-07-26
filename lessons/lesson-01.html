@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +9,35 @@
 </head>
 
 <body>
-    <main class="container">
-        <a href="../index.html">← All lessons</a>
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="brand" href="../index.html">
+                <span class="brand-icon">M</span>
 
-        <header>
-            <p class="lesson-number">Lesson 1</p>
+                <span>
+                    <strong>Malayalam Journey</strong>
+                    <small>Spoken language practice</small>
+                </span>
+            </a>
+
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="#pronouns">Pronouns</a>
+                <a href="#practice">Practice</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="lesson-page-main">
+        <a class="back-link" href="../index.html">← All lessons</a>
+
+        <header class="lesson-hero">
+            <p class="lesson-kicker">Lesson 1</p>
             <h1>Pronouns</h1>
-            <p>July 25, 2026</p>
+            <p class="lesson-date">July 25, 2026</p>
         </header>
 
-        <section>
+        <section class="lesson-section">
             <h2>Class Rule</h2>
 
             <div class="rule-card">
@@ -27,7 +45,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="lesson-section" id="pronouns">
             <h2>Pronouns</h2>
 
             <div class="table-wrapper">
@@ -35,7 +53,7 @@
                     <thead>
                         <tr>
                             <th>English</th>
-                            <th>Malayalam Pronunciation</th>
+                            <th>Malayalam pronunciation</th>
                             <th>When to use it</th>
                         </tr>
                     </thead>
@@ -105,7 +123,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="lesson-section">
             <h2>This and That</h2>
 
             <div class="word-grid">
@@ -120,18 +138,18 @@
                 </article>
 
                 <article class="word-card">
-                    <h3>This + noun</h3>
+                    <h3>This before a noun</h3>
                     <p class="malayalam-word">ee</p>
                 </article>
 
                 <article class="word-card">
-                    <h3>That + noun</h3>
+                    <h3>That before a noun</h3>
                     <p class="malayalam-word">aa</p>
                 </article>
             </div>
         </section>
 
-        <section>
+        <section class="lesson-section">
             <h2>Examples</h2>
 
             <div class="example-card">
@@ -142,43 +160,67 @@
             </div>
         </section>
 
-        <section>
+        <section class="lesson-section" id="practice">
             <h2>Practice</h2>
 
-            <ol>
+            <ol class="practice-list">
                 <li>Say every pronoun aloud three times.</li>
-                <li>Practice the difference between <strong>nee</strong> and <strong>ningal</strong>.</li>
-                <li>Practice the difference between <strong>nammal</strong> and <strong>njangal</strong>.</li>
-                <li>Point to nearby and faraway objects and say <strong>ithu</strong> or <strong>athu</strong>.</li>
+
+                <li>
+                    Practice the difference between
+                    <strong>nee</strong> and <strong>ningal</strong>.
+                </li>
+
+                <li>
+                    Practice the difference between
+                    <strong>nammal</strong> and <strong>njangal</strong>.
+                </li>
+
+                <li>
+                    Point to nearby and faraway objects and say
+                    <strong>ithu</strong> or <strong>athu</strong>.
+                </li>
             </ol>
         </section>
 
-        <section>
+        <section class="lesson-section">
             <h2>Revision Checklist</h2>
 
             <div class="checklist">
                 <label>
                     <input type="checkbox">
-                    I can say “I” and “you.”
+                    <span>I can say “I” and “you.”</span>
                 </label>
 
                 <label>
                     <input type="checkbox">
-                    I know when to use “nee” and “ningal.”
+                    <span>I know when to use “nee” and “ningal.”</span>
                 </label>
 
                 <label>
                     <input type="checkbox">
-                    I know the difference between “nammal” and “njangal.”
+                    <span>
+                        I know the difference between “nammal” and “njangal.”
+                    </span>
                 </label>
 
                 <label>
                     <input type="checkbox">
-                    I know the difference between “ithu” and “athu.”
+                    <span>
+                        I know the difference between “ithu” and “athu.”
+                    </span>
                 </label>
             </div>
         </section>
     </main>
-</body>
 
+    <footer class="site-footer">
+        <div>
+            <strong>Malayalam Journey</strong>
+            <p>Lesson 1: Pronouns</p>
+        </div>
+
+        <p>Practice every day.</p>
+    </footer>
+</body>
 </html>
